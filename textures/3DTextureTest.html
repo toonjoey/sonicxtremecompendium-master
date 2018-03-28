@@ -1,0 +1,91 @@
+<html><head>
+<title>3D Texture Test - www.senntient.com</title></head><body bgcolor="#000000">
+</head><body bgcolor="#000000" link=white alink=white vlink=white>
+<center><table border=0 cellpadding=0 cellspacing=0 width=100% height=80% align=center><tr><td valign=middle align=center>
+
+<table border=0 cellpadding=0 cellspacing=0 width=780 align=center><tr><td>
+
+<tr><td colspan=2 align=center valign=middle>
+<p align=justify><font size=0 color=gray face=verdana>
+
+<font size=5><b>3D Texture Test</b></font><br>
+<br>
+
+Let's pretend we want to create a texture that "looks" like it is 3D... so that when this flat texture is applied to the sides of box, the box seems much more "dimensional" than it really is - simply because of the way we'll set up the texture.<br>
+<br>
+The following assumes that we're creating a world that is viewed through a camera that moves in and out, up and down and <i>only</i> rotates about the Z axis (the axis pointing into the screen representing depth).  We're also assuming that textures must be square to accomodate the sides of the cube we will texture in the world...<br><br>
+
+</font></td></tr>
+
+<!-- ROW --><tr><td width=100 height=80 align=center valign=middle>
+<a href="01.jpg" target=_blank><img src="01.gif" border=0 align=center alt=""></a></td><td align=top><font size=0 color=gray face=verdana>
+
+<font color=red><b><<<<< 01</b></font> This shows what we would like the texture to eventually look like if applied to the top of a box.
+
+</font></td></tr>
+
+<!-- ROW --><tr><td width=100 height=80 align=center valign=middle>
+<a href="02.jpg" target=_blank><img src="02.gif" border=0 align=center alt=""></a></td><td align=top><font size=0 color=gray face=verdana>
+
+<font color=red><b><<<<< 02</b></font> First, we make sure our camera is set in a position and angle that matches how we like it (matches Sonic's pre-rendered camera angle, for example), then we set the camera to "orthographic projection" (where the focal length of the camera is set to remove all perspective and creates the "isometric" display we see to the left).
+
+</font></td></tr>
+
+<!-- ROW --><tr><td width=100 height=80 align=center valign=middle>
+<a href="03.jpg" target=_blank><img src="03.gif" border=0 align=center alt=""></a></td><td align=top><font size=0 color=gray face=verdana>
+
+<font color=red><b><<<<< 03</b></font> We crop the top of the cube's rendering.
+
+</font></td></tr>
+
+<!-- ROW --><tr><td width=100 height=80 align=center valign=middle>
+<a href="04.jpg" target=_blank><img src="04.gif" border=0 align=center alt=""></a></td><td align=top><font size=0 color=gray face=verdana>
+
+<font color=red><b><<<<< 04</b></font> Since textures tend to need to be a power of 8, in this case we'll scale down the cropped rendering to be 256x256 (other values like 128x128 are fine, too).
+
+</font></td></tr>
+
+<!-- ROW --><tr><td width=100 height=80 align=center valign=middle>
+<a href="05.jpg" target=_blank><img src="05.gif" border=0 align=center alt=""></a></td><td align=top><font size=0 color=gray face=verdana>
+
+<font color=red><b><<<<< 05</b></font> This image shows a quick mock-up of how the texture would look on top of a rendered cube.  Notice that I rendered a top-down view of the same "texture" as well to represent the front of the cube.  This front view would look similar to the conventional way of texture-mapping a surface - where the camera looks straight at what the artist draws or renders, whereas the top of the cube shows what the angled version looks like.
+
+</font></td></tr>
+
+<!-- ROW --><tr><td width=100 height=80 align=center valign=middle>
+<a href="06a.jpg" target=_blank><img src="06a.gif" border=0 align=center alt=""></a></td><td align=top><font size=0 color=gray face=verdana>
+
+<font color=red><b><<<< 06a</b></font> This is where it gets interesting.  This image shows what a scene filled with cubes textured with the one top-down texture would look like.  See how flat the sides look?  They do not have a "3D feel" to them.  The shapes look drawn on the side.
+
+</font></td></tr>
+
+<!-- ROW --><tr><td width=100 height=80 align=center valign=middle>
+<a href="06b.jpg" target=_blank><img src="06b.gif" border=0 align=center alt=""></a></td><td align=top><font size=0 color=gray face=verdana>
+
+<font color=red><b><<<< 06b</b></font> Now look!  This is what the snapshot would look like using both the front (top-down view) texture and the angled rendering we generated before.  See the difference?  Notice how much more dimensional the sides look.
+
+</font></td></tr>
+
+<!-- ROW --><tr><td width=100 height=80 align=center valign=middle>
+<a href="06c.jpg" target=_blank><img src="06c.gif" border=0 align=center alt=""></a></td><td align=top><font size=0 color=gray face=verdana>
+
+<font color=red><b><<<< 06c</b></font> Just to simulate an engine rendering a lighting change to the side itself, we have this image.  Compare this to 06a!!!
+
+</font></td></tr>
+
+
+<tr><td colspan=2 align=center valign=middle>
+<font size=0 color=gray face=verdana>
+<center><br><br>
+Thanks to hxc for hosting this page and images!<br>
+</center></font></td></tr>
+
+</table>
+
+</td></tr></table>
+</center></body>
+<SCRIPT language="Javascript">
+
+</SCRIPT>
+
+</html>
